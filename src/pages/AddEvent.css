@@ -1,0 +1,54 @@
+.addWrapper {
+    background-color: #5c095c;
+    position: relative;
+    height: 100dvh;
+}
+.addEvent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 500px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.inputWrapper label{
+    margin-bottom: .5em;
+    color: #fff;
+}
+.inputWrapper input, .inputWrapper textarea,input[type="submit"]{
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+input[type="submit"] {
+    background: #260531;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+input[type="submit"]:hover {
+    background-color: #63164F;
+}

@@ -1,0 +1,74 @@
+.hero {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+}
+
+.hero_text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 1rem;
+}
+
+.hero_city {
+    position: relative;
+    height: 100%;
+    margin: 0 .5em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hero_city h4 {
+    font-size: 2rem;
+}
+
+.hero_city-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+.hero h1,
+.hero h3 {
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.hero h3 {
+    margin-bottom: 30px;
+}
+
+.filter_bg {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    background: rgb(84,17,117);
+    background:linear-gradient(90deg, rgb(34 5 48) 0%, rgba(84, 17, 117, 0.43260869565217386) 100%);
+}
+
+.hero_img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    background: #e3cff8;
+    width: 3rem;
+    height: 3rem;
+}
+
+.p-carousel-indicators {
+    display: none;
+}
+.hero_city:hover img {
+    transform: scale(1.1);
+}

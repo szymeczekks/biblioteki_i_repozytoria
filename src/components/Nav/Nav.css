@@ -1,0 +1,27 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1;
+    padding: 2rem;
+    transition: background-color .15s ease-in-out;
+}
+.add_new {
+    cursor: pointer;
+}
+.add_new a{ 
+    color: #fff;
+}
+
+.nav .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav.scrolled {
+    background-color: rgba(36, 6, 50,.9);
+}
