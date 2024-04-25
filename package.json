@@ -1,7 +1,7 @@
 {
   "name": "events_app",
   "version": "0.1.0",
-  "homepage": "https://gryszard.github.io/forum-eventum",
+  "homepage": "https://github.com/szymeczekks/biblioteki_i_repozytoria",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
