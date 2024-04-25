@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/biblioteki_i_repozytoria/static/css/main.e366e55c.css",
+    "main.js": "/biblioteki_i_repozytoria/static/js/main.e22b9b1f.js",
+    "static/js/453.5d83866b.chunk.js": "/biblioteki_i_repozytoria/static/js/453.5d83866b.chunk.js",
+    "static/media/Inter-italic.var.woff2?v=3.19": "/biblioteki_i_repozytoria/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
+    "static/media/Inter-roman.var.woff2?v=3.19": "/biblioteki_i_repozytoria/static/media/Inter-roman.var.ba4caefcdf5b36b438db.woff2",
+    "static/media/hero.jpg": "/biblioteki_i_repozytoria/static/media/hero.8a14c10cc2d82e505d90.jpg",
+    "static/media/juz-w-krotce.jpg": "/biblioteki_i_repozytoria/static/media/juz-w-krotce.1473fa1c83c74a623ebe.jpg",
+    "static/media/koszalin.jpg": "/biblioteki_i_repozytoria/static/media/koszalin.de2bb39b9d230ba79f8f.jpg",
+    "index.html": "/biblioteki_i_repozytoria/index.html",
+    "main.e366e55c.css.map": "/biblioteki_i_repozytoria/static/css/main.e366e55c.css.map",
+    "main.e22b9b1f.js.map": "/biblioteki_i_repozytoria/static/js/main.e22b9b1f.js.map",
+    "453.5d83866b.chunk.js.map": "/biblioteki_i_repozytoria/static/js/453.5d83866b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e366e55c.css",
+    "static/js/main.e22b9b1f.js"
+  ]
+}
