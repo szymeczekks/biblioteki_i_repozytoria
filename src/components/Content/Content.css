@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 2%;
     margin-top: 3em;
+    padding: 0 20px;
 }
 
 .filters_wrapper {
@@ -57,5 +58,10 @@
 @media (max-width:650px) {
     .offer {
         flex: 0 0 49%;
+    }
+}
+@media (max-width:450px) {
+    .offer {
+        flex: 0 0 100%;
     }
 }

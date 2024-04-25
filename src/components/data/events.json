@@ -1,0 +1,42 @@
+[
+    {
+        "id": 3,
+        "title": "Wspólne oglądanie kina 3",
+        "rating": 4.5,
+        "reviews": 120,
+        "initiator": "Szymon",
+        "city": "Koszalin"
+    },
+    {
+        "id": 1,
+        "title": "Wspólne oglądanie kina",
+        "rating": 4.5,
+        "reviews": 120,
+        "initiator": "Szymon",
+        "city": "Koszalin"
+    },
+    {
+        "id": 2,
+        "title": "Wspólne oglądanie kina",
+        "rating": 4.5,
+        "reviews": 120,
+        "initiator": "Szymon",
+        "city": "Koszalin"
+    },
+    {
+        "id": 0,
+        "title": "Wspólne oglądanie kina w Kołobrzegu",
+        "rating": 3.9,
+        "reviews": 120,
+        "initiator": "Szymon",
+        "city": "Kołobrzeg"
+    },
+    {
+        "id": 4,
+        "title": "Wspólne oglądanie kina",
+        "rating": 4.5,
+        "reviews": 120,
+        "initiator": "Szymon",
+        "city": "Koszalin"
+    }
+]

@@ -11,6 +11,9 @@
 .add_new {
     cursor: pointer;
 }
+.add_new.mobile {
+    display: none;
+}
 .add_new a{ 
     color: #fff;
 }
@@ -24,4 +27,13 @@
 
 .nav.scrolled {
     background-color: rgba(36, 6, 50,.9);
+}
+
+@media (max-width: 500px) {
+    .add_new {
+        display: none;
+    }
+    .add_new.mobile {
+        display: block;
+    }
 }

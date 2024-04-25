@@ -1,11 +1,9 @@
 import './Hero.css';
-import { useState, useEffect, useContext } from 'react';
-import { CityContext } from '../context';
+import { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import hero from '../../images/hero.jpg';
 
 function Hero() {
-  const { city, setCity } = useContext(CityContext);
   const [products, setProducts] = useState([]);
   const responsiveOptions = [
     {
@@ -49,7 +47,7 @@ function Hero() {
 
   const productTemplate = (city) => {
     return (
-      <a href="#offers" onClick={e => setCity(city.name)}>
+      <a href="#offers" onClick={() => console.log('w')}>
         <div className="hero_city border-1 surface-border border-round m-2 text-center py-5 px-3">
           <div className='img_filter'>
             <img alt={city.name} src={images[`${normalize(city.name)}.jpg`]} />

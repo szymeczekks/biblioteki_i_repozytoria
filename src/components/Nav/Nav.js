@@ -18,6 +18,7 @@ function Nav() {
       <div className='container'>
         <span><Link to="/">ForumEventum</Link></span>
         <span className='add_new'><Link to="/add-event">Dodaj event +</Link></span>
+        <span className='add_new mobile'><Link to="/add-event">+</Link></span>
       </div>
     </div>
   );

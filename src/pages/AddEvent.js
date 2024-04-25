@@ -1,19 +1,38 @@
 import './AddEvent.css';
 import hero from '../images/hero.jpg';
-import { useState } from 'react';
+import { DataContext } from '../components/context';
+import { useState, useContext } from 'react';
 
 function AddEvent() {
     const [title, setTitle] = useState(null);
     const [author, setAuthor] = useState(null);
-    const [description, setDescription] = useState(null);
+    const [city, setCity] = useState(null);
+    const { data, setData } = useContext(DataContext);
 
     const handlePost = (e) => {
         e.preventDefault();
-        console.log({
+        console.log(data);
+        // let event = {
+        //     id: data.length,
+        //     title: title,
+        //     rating: 0,
+        //     reviews: 0,
+        //     initiator: author,
+        //     city: city
+        // };
+        // let events = (...data + event) ;
+        // console.log(events);
+        setData([
+            ...data,
+            {
+            id: data.length,
             title: title,
-            author: author,
-            description: description
-        });
+            rating: 0,
+            reviews: 0,
+            initiator: author,
+            city: city
+        }]);
+        console.log(...data);
     }
 
     return (
@@ -31,8 +50,8 @@ function AddEvent() {
                         <input onChange={e => setAuthor(e.target.value)} id="author" type="text" placeholder='John Doe'></input>
                     </div>
                     <div className='inputWrapper'>
-                        <label htmlFor="title">Opisz swój event</label>
-                        <textarea onChange={e => setDescription(e.target.value)} id="description" placeholder='Wspólne oglądanie kina na dachu kampera'></textarea>
+                        <label htmlFor="city">Podaj miasto</label>
+                        <input onChange={e => setCity(e.target.value)} id="city" type="text" placeholder='Koszalin'></input>
                     </div>
                     <input type="submit" onClick={e => handlePost(e)} value="Dodaj event"></input>
                 </form>

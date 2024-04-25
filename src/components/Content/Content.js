@@ -1,57 +1,16 @@
 import { useEffect, useState, useContext } from "react";
-import { CityContext } from '../context';
+import { DataContext } from '../context';
+import events from '../data/events.json';
 import './Content.css';
 function Content() {
     const [offers, setOffers] = useState(null);
-    const { city, setCity } = useContext(CityContext);
+    const { data, setData } = useContext(DataContext);
     useEffect(() => {
-        const offersTest = [
-            {
-                id: 3,
-                title: 'Wspólne oglądanie kina 3',
-                rating: 4.5,
-                reviews: 120,
-                initiator: 'Szymon',
-                city: "Koszalin"
-            },
-            {
-                id: 1,
-                title: 'Wspólne oglądanie kina',
-                rating: 4.5,
-                reviews: 120,
-                initiator: 'Szymon',
-                city: "Koszalin"
-            },
-            {
-                id: 2,
-                title: 'Wspólne oglądanie kina',
-                rating: 4.5,
-                reviews: 120,
-                initiator: 'Szymon',
-                city: "Koszalin"
-            },
-            {
-                id: 0,
-                title: 'Wspólne oglądanie kina w Kołobrzegu',
-                rating: 3.9,
-                reviews: 120,
-                initiator: 'Szymon',
-                city: "Kołobrzeg"
-            },
-            {
-                id: 4,
-                title: 'Wspólne oglądanie kina',
-                rating: 4.5,
-                reviews: 120,
-                initiator: 'Szymon',
-                city: "Koszalin"
-            }
-        ]
-        setOffers(offersTest);
+            !data && setData(events);
     }, []);
 
     const handleOffer = () => {
-        console.log(city);
+        console.log('offer');
     }
 
     const Offer = (offer) => {
@@ -86,11 +45,11 @@ function Content() {
     const sortOffers = (how) => {
         let sorted;
         if (how === 'up') {
-            sorted = [...offers.sort(compareUp)];
+            sorted = [...data.sort(compareUp)];
         } else {
-            sorted = [...offers.sort(compareDown)];
+            sorted = [...data.sort(compareDown)];
         }
-        setOffers(sorted);
+        setData(sorted);
     }
 
     return (
@@ -99,7 +58,7 @@ function Content() {
                 Filtruj według opinii: <div><button onClick={e => sortOffers('up')}>/\</button><button onClick={e => sortOffers('down')}>\/</button></div>
             </div>
             <div className="offers_wrapper">
-                {offers?.map((offer) => (<div onClick={handleOffer} key={offer.id} className="offer">{Offer(offer)}</div>))}
+                {data?.map((offer) => (<div onClick={handleOffer} key={offer.id} className="offer">{Offer(offer)}</div>))}
             </div>
         </div>
     );

@@ -1,15 +1,15 @@
 import React, { createContext, useState } from 'react';
 
-export const CityContext = createContext(null);
+export const DataContext = createContext(null);
 
-export const CityProvider = ({ children }) => {
-  const [city, setCity] = useState(null);
-  const contextValue = {city, setCity};
+export const DataProvider = ({ children }) => {
+  const [data, setData] = useState(null);
+  const contextValue = {data, setData};
 
   return (
-    <CityContext.Provider value={contextValue}>
+    <DataContext.Provider value={contextValue}>
       {children}
-    </CityContext.Provider>
+    </DataContext.Provider>
   );
 } 
 
